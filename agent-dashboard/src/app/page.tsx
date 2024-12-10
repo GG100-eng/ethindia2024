@@ -1,8 +1,6 @@
 "use client";
-
 import Link from 'next/link';
 import { WalletDefault } from '@coinbase/onchainkit/wallet';
-
 export default function Home() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-900 to-gray-800 text-white">
@@ -14,17 +12,14 @@ export default function Home() {
           <WalletDefault />
         </div>
       </nav>
-
       <main className="max-w-7xl mx-auto px-4 py-20">
         <div className="text-center space-y-8">
           <h2 className="text-5xl font-bold bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
             OnchainSentinel
           </h2>
           <p className="text-xl text-gray-300 max-w-2xl mx-auto">
-            An autonomous agent that discovers and rewards your contributions on Base network. 
-            Automatically tracks social engagement and distributes rewards.
+            The first autonomous, onchain agent that discovers and rewards creators driving attention to Base. Automatically tracks social engagement, creates onchain leaderboards, and distributes rewards.
           </p>
-
           <div className="flex justify-center gap-6 mt-12">
             <Link 
               href="/dashboard" 
@@ -47,19 +42,18 @@ export default function Home() {
               </svg>
             </a>
           </div>
-
           <div className="mt-20 grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="bg-gray-800 p-6 rounded-lg">
               <h3 className="text-xl font-semibold mb-4">Autonomous Tracking</h3>
-              <p className="text-gray-400">Automatically monitors and tracks your social media engagement on Base network.</p>
+              <p className="text-gray-400">Automatically monitors and tracks creator content that brings attention to Base.</p>
             </div>
             <div className="bg-gray-800 p-6 rounded-lg">
               <h3 className="text-xl font-semibold mb-4">Smart Rewards</h3>
-              <p className="text-gray-400">Distributes rewards based on engagement metrics and contribution value.</p>
+              <p className="text-gray-400">Incentivizes creators who effectively drive attention and engagement to Base.</p>
             </div>
             <div className="bg-gray-800 p-6 rounded-lg">
-              <h3 className="text-xl font-semibold mb-4">Real-time Updates</h3>
-              <p className="text-gray-400">Track your performance and rewards in real-time through an intuitive dashboard.</p>
+              <h3 className="text-xl font-semibold mb-4">Transparent Leaderboards</h3>
+              <p className="text-gray-400">Verifiable onchain leaderboards proving creator impact - making Base's rewards truly merit-based.</p>
             </div>
           </div>
         </div>
